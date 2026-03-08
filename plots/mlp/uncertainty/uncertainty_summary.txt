@@ -1,0 +1,16 @@
+Architecture: MLP
+
+Metric                                    Value  Note
+----------------------------------------------------------------------
+Bias [%]                                 2.3305  [+2.249, +2.415]  Bootstrap 95% CI
+RMS(dE/E) [%]                            8.7369  [+8.651, +8.815]  Bootstrap 95% CI
+Std(dE/E) [%]                            8.4203  [+8.340, +8.492]  Bootstrap 95% CI
+p68(|dE/E|) [%]                          7.8628  [+7.781, +7.939]  Bootstrap 95% CI
+MAE [GeV]                                5.0628  [+5.014, +5.109]  Bootstrap 95% CI
+RMSE [GeV]                               7.1432  [+7.071, +7.210]  Bootstrap 95% CI
+Gaussian fit μ [%]                       1.2266  ± 0.086  Fit uncertainty
+Gaussian fit σ [%]                       7.5784  ± 0.086  Fit uncertainty
+MC Dropout mean σ [GeV]                  6.8857  ± 3.2612
+Ensemble mean σ [GeV]                    0.9062  ± 0.4588
+KS statistic                             0.0413  p=0.0000  Non-normal ✗
+Shapiro-Wilk statistic                   0.9778  p=0.0000  Non-normal ✗

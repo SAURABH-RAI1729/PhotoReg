@@ -1,0 +1,9 @@
+Architecture: MLP
+
+  MAE                    5.0628
+  MSE                    51.0255
+  RMSE                   7.1432
+  Bias [%]               2.3305
+  RMS(dE/E) [%]          8.7369
+  Std(dE/E) [%]          8.4203
+  p68(|dE/E|) [%]        7.8628

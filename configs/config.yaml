@@ -1,0 +1,61 @@
+# ============================================================
+# config.yaml
+#
+# Central configuration for training, evaluation, and inference.
+# Edit this file to change hyperparameters without touching code.
+# ============================================================
+
+seed: 42
+
+data:
+  # Point this at your .npz file. Run generate_dataset.py if you do not have it.
+  path: "toy_photon_dataset.npz"
+  val_split: 0.2
+
+model:
+  # Options: mlp | cnn | deepsets
+  architecture: "mlp"
+
+  mlp:
+    hidden_dims: [256, 128, 64]
+    dropout: 0.2          # used for MC Dropout uncertainty
+
+  cnn:
+    channels: [16, 32, 64]
+    dropout: 0.2
+
+  deepsets:
+    phi_dims: [64, 128, 256]
+    rho_dims: [192, 64]
+    dropout: 0.2
+
+training:
+  epochs: 100
+  batch_size: 128
+  learning_rate: 0.001
+  weight_decay: 0.0
+  # LR scheduler -- reduce on plateau
+  scheduler:
+    patience: 10
+    factor: 0.5
+
+checkpoints:
+  dir: "checkpoints"
+  save_best: true         # saves best val loss checkpoint
+  save_last: true         # always saves last epoch too
+
+plots:
+  dir: "plots"
+  loss_clip_first_epoch: true   # whether to also save loss curve without epoch 0
+
+uncertainty:
+  bootstrap_iterations: 1000
+  bootstrap_ci: 95              # confidence interval in percent
+  n_bins_resolution: 10         # bins for binned resolution plot
+  mc_dropout_passes: 100        # forward passes per sample
+  ensemble_size: 5              # number of models in deep ensemble
+  ensemble_seeds: [42, 7, 13, 99, 2025]
+
+inference:
+  batch_sizes: [1, 32, 256, 1024]
+  warmup_batches: 10

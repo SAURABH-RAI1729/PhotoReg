@@ -1,0 +1,10 @@
+Architecture  : DEEPSETS
+Hardware      : cuda
+Parameters    : 103,361
+
+  Batch size     Avg time/batch (ms)    Avg time/sample (µs)
+------------------------------------------------------------
+           1                   0.513                 512.716
+          32                   0.631                  19.709
+         256                   3.213                  12.549
+        1024                  12.648                  12.351

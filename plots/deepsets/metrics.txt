@@ -1,0 +1,9 @@
+Architecture: DEEPSETS
+
+  MAE                    9.2843
+  MSE                    157.2961
+  RMSE                   12.5418
+  Bias [%]               -11.7257
+  RMS(dE/E) [%]          16.1501
+  Std(dE/E) [%]          11.1056
+  p68(|dE/E|) [%]        14.0203

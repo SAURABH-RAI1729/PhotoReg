@@ -1,0 +1,10 @@
+Architecture  : CNN
+Hardware      : cuda
+Parameters    : 105,473
+
+  Batch size     Avg time/batch (ms)    Avg time/sample (µs)
+------------------------------------------------------------
+           1                   1.217                1216.945
+          32                   1.432                  44.760
+         256                   0.815                   3.185
+        1024                   1.442                   1.408

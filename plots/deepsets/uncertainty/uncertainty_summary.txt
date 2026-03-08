@@ -1,0 +1,16 @@
+Architecture: DEEPSETS
+
+Metric                                    Value  Note
+----------------------------------------------------------------------
+Bias [%]                               -11.7257  [-11.837, -11.617]  Bootstrap 95% CI
+RMS(dE/E) [%]                           16.1501  [+16.002, +16.289]  Bootstrap 95% CI
+Std(dE/E) [%]                           11.1056  [+10.981, +11.225]  Bootstrap 95% CI
+p68(|dE/E|) [%]                         14.0203  [+13.906, +14.117]  Bootstrap 95% CI
+MAE [GeV]                                9.2843  [+9.202, +9.359]  Bootstrap 95% CI
+RMSE [GeV]                              12.5418  [+12.436, +12.649]  Bootstrap 95% CI
+Gaussian fit μ [%]                      -9.3199  ± 0.091  Fit uncertainty
+Gaussian fit σ [%]                       7.3558  ± 0.091  Fit uncertainty
+MC Dropout mean σ [GeV]                 10.1149  ± 6.2755
+Ensemble mean σ [GeV]                    4.2532  ± 1.5024
+KS statistic                             0.1063  p=0.0000  Non-normal ✗
+Shapiro-Wilk statistic                   0.9007  p=0.0000  Non-normal ✗

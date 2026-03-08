@@ -1,0 +1,10 @@
+Architecture  : MLP
+Hardware      : cuda
+Parameters    : 99,969
+
+  Batch size     Avg time/batch (ms)    Avg time/sample (µs)
+------------------------------------------------------------
+           1                   0.558                 558.283
+          32                   0.561                  17.523
+         256                   0.789                   3.080
+        1024                   0.746                   0.729

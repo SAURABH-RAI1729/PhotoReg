@@ -1,0 +1,9 @@
+Architecture: CNN
+
+  MAE                    5.2640
+  MSE                    55.9625
+  RMSE                   7.4808
+  Bias [%]               2.1269
+  RMS(dE/E) [%]          10.8685
+  Std(dE/E) [%]          10.6583
+  p68(|dE/E|) [%]        8.0928

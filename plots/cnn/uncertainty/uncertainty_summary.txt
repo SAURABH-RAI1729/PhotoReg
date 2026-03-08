@@ -1,0 +1,16 @@
+Architecture: CNN
+
+Metric                                    Value  Note
+----------------------------------------------------------------------
+Bias [%]                                 2.1269  [+2.018, +2.228]  Bootstrap 95% CI
+RMS(dE/E) [%]                           10.8685  [+10.685, +11.021]  Bootstrap 95% CI
+Std(dE/E) [%]                           10.6583  [+10.490, +10.800]  Bootstrap 95% CI
+p68(|dE/E|) [%]                          8.0928  [+8.015, +8.167]  Bootstrap 95% CI
+MAE [GeV]                                5.2640  [+5.214, +5.312]  Bootstrap 95% CI
+RMSE [GeV]                               7.4808  [+7.410, +7.550]  Bootstrap 95% CI
+Gaussian fit μ [%]                       0.1538  ± 0.078  Fit uncertainty
+Gaussian fit σ [%]                       7.6103  ± 0.078  Fit uncertainty
+MC Dropout mean σ [GeV]                  8.2900  ± 5.7496
+Ensemble mean σ [GeV]                    2.3397  ± 1.0023
+KS statistic                             0.0896  p=0.0000  Non-normal ✗
+Shapiro-Wilk statistic                   0.8774  p=0.0000  Non-normal ✗
